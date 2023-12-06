@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-image: repeating-linear-gradient(rgb(201, 201, 217), rgb(227, 181, 181),rgb(224, 213, 153),rgb(195, 236, 195) );
+        } */
+        .par{
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            background-color: rgb(238, 238, 107);
+            margin: 100px auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .in{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: white;
+            margin-top: 80px;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        #in3{
+            height: 100px;
+            width: 200px;
+            border: 1px solid;
+            border-radius: 0px 0px 100px 100px;
+            background-color: rgb(186, 10, 39);
+            background-image: conic-gradient();
+        }
+        .e{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 5px dotted black;
+            background-color: #a52a2a;
+            margin: 73px auto;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotateZ(-360deg);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+        #in3:hover{
+            height: 140px;
+            background-color: pink;
+        }
+        .e:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="par">
+        <div class="in" id="in1">
+            <div class="e"></div>
+        </div>
+        <div class="in" id="in2">
+            <div class="e"></div>
+        </div>
+        <div class="" id="in3"></div>
+    </div>
+</body>
+</html>
